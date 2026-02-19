@@ -17,4 +17,9 @@ public class InventoryTracker {
 
         return 0;
     }
+        public void alertLowStock(String productId, int stockLevel) {
+       if (stockLevel <= 5) {
+        System.out.println("ALERT: Low stock for " + productId + " (Remaining: " + stockLevel + ")");
+    }
+}
 }
